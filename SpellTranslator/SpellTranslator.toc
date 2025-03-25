@@ -1,7 +1,7 @@
 ## Interface: 30300
 ## Title: Spell Translator
 ## Notes: Traduz a descrição das magias para português
-## Author: SeuNome
+## Author: Wali
 ## Version: 1.0
 ## DefaultState: Enabled
 

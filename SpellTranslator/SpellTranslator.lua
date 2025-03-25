@@ -173,88 +173,225 @@ local translations = {
     ["Tame Beast"] = "Tame uma besta selvagem para que ela se torne seu pet. Requer um certo tempo para completar.",
 
     -- PROFISSÕES
+        -- Alquimia
+        ["Alchemy"] = "Alquimia",
+        ["Transmute"] = "Transmutar",
+        ["Create Potion"] = "Criar Poção",
+        ["Create Flask"] = "Criar Frasco",
+        ["Create Elixir"] = "Criar Elixir",
+        ["Mixology"] = "Mistura (Passiva)",
+        ["Potion Mastery"] = "Maestria em Poções (Passiva)",
+    
+        -- Ferraria
+        ["Blacksmithing"] = "Ferraria",
+        ["Smelting"] = "Fundição",
+        ["Armorsmithing"] = "Fabricação de Armaduras",
+        ["Weaponsmithing"] = "Fabricação de Armas",
+        ["Master Swordsmith"] = "Mestre Espadeiro (Passiva)",
+        ["Master Hammersmith"] = "Mestre Marteleiro (Passiva)",
+        ["Master Axesmith"] = "Mestre Machadeiro (Passiva)",
+    
+        -- Encantamento
+        ["Enchanting"] = "Encantamento",
+        ["Disenchant"] = "Desencantar",
+        ["Enchant Bracer"] = "Encantamento de Braçadeiras",
+        ["Enchant Weapon"] = "Encantamento de Armas",
+        ["Enchant Shield"] = "Encantamento de Escudos",
+        ["Enchant Gloves"] = "Encantamento de Luvas",
+        ["Enchant Ring"] = "Encantamento de Anéis (Passiva)",
+    
+        -- Engenharia
+        ["Engineering"] = "Engenharia",
+        ["Create Explosives"] = "Criar Explosivos",
+        ["Gnomish Engineering"] = "Engenharia Gnomica",
+        ["Goblin Engineering"] = "Engenharia Goblin",
+        ["Rocket Boots"] = "Botas Foguete",
+        ["Jeeves"] = "Jeeves (Servo-mecânico)",
+        ["Sapper Charge"] = "Carga Demolidora",
+        ["Tinker's Kit"] = "Kit de Engenhoqueiro (Passiva)",
+    
+        -- Herborismo
+        ["Herbalism"] = "Herborismo",
+        ["Find Herbs"] = "Encontrar Ervas (Passiva)",
+        ["Lifeblood"] = "Sangue da Vida (Passiva)",
+        ["Gather Herbs"] = "Coletar Ervas",
+    
+        -- Inscrição
+        ["Inscription"] = "Inscrição",
+        ["Create Glyph"] = "Criar Glifo",
+        ["Milling"] = "Moagem",
+        ["Scroll of Recall"] = "Pergaminho de Retorno",
+        ["Northrend Inscription Research"] = "Pesquisa de Inscrição de Nortúndria (Passiva)",
+    
+        -- Joalheria
+        ["Jewelcrafting"] = "Joalheria",
+        ["Prospecting"] = "Prospecção",
+        ["Cut Gem"] = "Lapidar Gema",
+        ["Jewelcrafting Design"] = "Design de Joalheria",
+        ["Gem Perfection"] = "Perfeição em Gemas (Passiva)",
+    
+        -- Coureira
+        ["Leatherworking"] = "Coureira",
+        ["Skinning"] = "Esfolamento",
+        ["Create Leather Armor"] = "Criar Armadura de Couro",
+        ["Create Mail Armor"] = "Criar Armadura de Malha",
+        ["Create Drums"] = "Criar Tambores",
+        ["Fur Lining"] = "Forro de Pele (Passiva)",
+        ["Specializations"] = "Especializações (Passiva)",
+    
+        -- Mineração
+        ["Mining"] = "Mineração",
+        ["Find Minerals"] = "Encontrar Minerais (Passiva)",
+        ["Smelting"] = "Fundir Minério",
+        ["Toughness"] = "Resistência (Passiva)",
+        ["Smelt Titansteel"] = "Fundir Titânio",
+    
+        -- Esfolamento
+        ["Skinning"] = "Esfolamento",
+        ["Skinning Mastery"] = "Maestria em Esfolamento (Passiva)",
+        ["Master Skinner"] = "Mestre Esfolador (Passiva)",
+    
+        -- Alfaiataria
+        ["Tailoring"] = "Alfaiataria",
+        ["Create Cloth Armor"] = "Criar Armadura de Tecido",
+        ["Create Bags"] = "Criar Bolsas",
+        ["Create Spellthread"] = "Criar Enchimento Mágico",
+        ["Shadoweave Tailoring"] = "Alfaiataria de Umbratrama (Passiva)",
+        ["Spellfire Tailoring"] = "Alfaiataria de Fogo Mágico (Passiva)",
+        ["Mooncloth Tailoring"] = "Alfaiataria de Lunatrama (Passiva)",
+    
+        -- Primeiros Socorros
+        ["First Aid"] = "Primeiros Socorros",
+        ["Create Bandage"] = "Criar Bandagem",
+        ["Heavy Linen Bandage"] = "Bandagem de Linho Grosso",
+        ["Antivenom"] = "Antiveneno",
+        ["Master Medic"] = "Mestre Médico (Passiva)",
+    
+        -- Pesca
+        ["Fishing"] = "Pesca",
+        ["Find Fish"] = "Encontrar Peixes (Passiva)",
+        ["Fishing Poles"] = "Varas de Pescar",
+        ["Fishing Skill"] = "Habilidade de Pesca (Passiva)",
+    
+        -- Culinária
+        ["Basic Campfire"] = "Cria uma fogueira que aumenta o Espírito em 4 para aliados próximos e permite preparar comida.",
+        ["Cooking"] = "Culinária",
+        ["Create Food"] = "Criar Comida",
+        ["Spiced Mammoth Treats"] = "Petiscos de Mamute Temperado",
+        ["Chef's Award"] = "Prêmio do Chef (Passiva)",
+        ["Master Chef"] = "Mestre Culinarista (Passiva)",
 
-        -- Alchemy
-    ["Alchemy"] = "Alquimia",
-    ["Transmute"] = "Transmutar",
-    ["Create Potion"] = "Criar Poção",
-    ["Create Flask"] = "Criar Frasco",
-    ["Create Elixir"] = "Criar Elixir",
-    ["Mixology"] = "Mistura",
-    ["Potion Mastery"] = "Mestre de Poções",
-    
-    -- Blacksmithing
-    ["Blacksmithing"] = "Ferraria",
-    ["Smelting"] = "Fundir",
-    ["Crafting"] = "Criação",
-    ["Weaponsmithing"] = "Forjamento de Armas",
-    ["Armorsmithing"] = "Forjamento de Armaduras",
-    ["Master Blacksmithing"] = "Mestre Ourives",
-    
-    -- Enchanting
-    ["Enchanting"] = "Encantamento",
-    ["Enchant Weapon"] = "Encantar Arma",
-    ["Enchant Armor"] = "Encantar Armadura",
-    ["Enchant Ring"] = "Encantar Anel",
-    ["Enchanting Mastery"] = "Mestre Encantador",
-    
-    -- Engineering
-    ["Engineering"] = "Engenharia",
-    ["Crafting Explosives"] = "Criação de Explosivos",
-    ["Create Gadget"] = "Criar Gadget",
-    ["Mechanical Crafting"] = "Criação Mecânica",
-    ["Engineering Mastery"] = "Mestre Engenheiro",
-    
-    -- Herbalism
-    ["Herbalism"] = "Herborismo",
-    ["Gather Herbs"] = "Coletar Ervas",
-    ["Create Potion"] = "Criar Poção",
-    ["Create Elixir"] = "Criar Elixir",
-    ["Master Herbalism"] = "Mestre Herborista",
-    
-    -- Inscription
-    ["Inscription"] = "Caligrafia",
-    ["Create Glyph"] = "Criar Glifo",
-    ["Create Scroll"] = "Criar Pergaminho",
-    ["Create Card"] = "Criar Cartão",
-    ["Master Inscription"] = "Mestre Calígrafo",
-    
-    -- Jewelcrafting
-    ["Jewelcrafting"] = "Joalheria",
-    ["Crafting Gem"] = "Criar Joia",
-    ["Crafting Jewelry"] = "Criar Joalheria",
-    ["Setting Gems"] = "Definir Pedras Preciosas",
-    ["Jewelcrafting Mastery"] = "Mestre Joalheiro",
-    
-    -- Leatherworking
-    ["Leatherworking"] = "Cuiraria",
-    ["Craft Leather Armor"] = "Criar Armadura de Couro",
-    ["Craft Mail Armor"] = "Criar Armadura de Malha",
-    ["Craft Ranged Weapon"] = "Criar Arma à Distância",
-    ["Leatherworking Mastery"] = "Mestre Cuireiro",
-    
-    -- Mining
-    ["Mining"] = "Mineração",
-    ["Smelt Ore"] = "Fundir Minério",
-    ["Mine Gems"] = "Minar Pedras Preciosas",
-    ["Mining Mastery"] = "Mestre Mineiro",
-    
-    -- Skinning
-    ["Skinning"] = "Desossa",
-    ["Skin Beast"] = "Desossar Besta",
-    ["Skin Leather"] = "Desossar Couro",
-    ["Skinning Mastery"] = "Mestre Desossador",
-    
-    -- Tailoring
-    ["Tailoring"] = "Sastraria",
-    ["Create Cloth Armor"] = "Criar Armadura de Tecido",
-    ["Create Bags"] = "Criar Bolsas",
-    ["Create Spellcloth"] = "Criar Pano de Feitiço",
-    ["Tailoring Mastery"] = "Mestre Sastre",
+    -- Spells do Rogue(Ladino)
+      -- Habilidades
+      ["Ambush"] = "Realiza um golpe surpresa em um inimigo, causando dano crítico se realizado de forma furtiva.",
+      ["Backstab"] = "Golpeia o inimigo pelas costas, causando dano elevado.",
+      ["Eviscerate"] = "Golpeia o inimigo, causando dano significativo e aumentando o efeito de sangramento.",
+      ["Kidney Shot"] = "Golpeia os rins do inimigo, atordoando-o e reduzindo sua capacidade de ataque por um tempo.",
+      ["Sap"] = "Imobiliza um inimigo por um tempo, tornando-o incapaz de agir.",
+      ["Stealth"] = "Permite ao Ladino se mover furtivamente, invisível para inimigos próximos.",
+      ["Vanish"] = "Desaparece das vistas dos inimigos, se tornando invisível e permitindo escapar ou se reposicionar.",
+      ["Garrote"] = "Golpeia o inimigo com uma corda, causando dano e aplicando um efeito de sangramento.",
+      ["Rupture"] = "Golpeia o inimigo e o faz sangrar, causando dano ao longo do tempo.",
+      ["Slice and Dice"] = "Aumenta a velocidade de ataque do Ladino, permitindo ataques mais rápidos.",
+      ["Blind"] = "Cega o inimigo, impedindo-o de ver o Ladino e tornando-o incapaz de atacar por um tempo.",
+      ["Distract"] = "Distrai o inimigo, forçando-o a olhar em outra direção por um curto período de tempo.",
+      ["Shadowstep"] = "Teleporta-se rapidamente para o inimigo, permitindo um ataque surpresa.",
+      ["Cloak of Shadows"] = "Cria uma capa de sombras que remove os efeitos de veneno e magia negativa.",
+      ["Adrenaline Rush"] = "Aumenta a velocidade de ataque e gera mais energia para o Ladino.",
+      ["Evasion"] = "Aumenta drasticamente a chance de esquivar-se dos ataques inimigos por um tempo.",
+      ["Feint"] = "Realiza uma manobra para enganar o inimigo e reduzir o dano recebido de ataques frontais.",
+      ["Pick Lock"] = "Permite ao Ladino destrancar cofres ou portas, contanto que tenha a habilidade necessária.",
+      ["Pickpocket"] = "Rouba itens de inimigos desprevenidos, podendo obter ouro ou outros objetos úteis.",
+      ["Shadow Dance"] = "Permite ao Ladino usar suas habilidades furtivas de forma contínua por um tempo limitado.",
+      ["Mutilate"] = "Golpeia o inimigo com lâminas afiadas, causando dano adicional se o inimigo estiver envenenado.",
+      ["Poison"] = "Aplica veneno na lâmina, causando dano ao longo do tempo ao inimigo atingido.",
+      ["Deadly Throw"] = "Lança uma lâmina venenosa à distância, causando dano e aplicando um veneno mortal ao inimigo.",
+      
+      
 
+   
+    
+
+    -- Passivas Raciais
+
+        -- Humanos
+        ["Every Man for Himself"] = "Cada um por si",
+        ["The Human Spirit"] = "O Espírito Humano",
+        ["Diplomacy"] = "Diplomacia",
+        ["Sword Specialization"] = "Especialização em Espadas",
+        ["Mace Specialization"] = "Especialização em Maças",
+        
+        -- Anões
+        ["Stoneform"] = "Forma de Pedra",
+        ["Gun Specialization"] = "Especialização em Armas de Fogo",
+        ["Frost Resistance"] = "Resistência ao Gelo",
+        ["Explorer"] = "Explorador",
+        ["Might of the Mountain"] = "Poder da Montanha",
+        
+        -- Elfos Noturnos
+        ["Shadowmeld"] = "Fundir-se com as Sombras",
+        ["Quickness"] = "Rapidez",
+        ["Wisp Spirit"] = "Espírito de Vulto",
+        ["Nature Resistance"] = "Resistência à Natureza",
+        ["Elusiveness"] = "Elusividade",
+        
+        -- Gnomos
+        ["Escape Artist"] = "Artista da Fuga",
+        ["Expansive Mind"] = "Mente Expansiva",
+        ["Arcane Resistance"] = "Resistência ao Arcano",
+        ["Engineering Specialization"] = "Especialização em Engenharia",
+        ["Shortblade Specialization"] = "Especialização em Lâminas Curtas",
+        
+        -- Draenei
+        ["Gift of the Naaru"] = "Dádiva dos Naaru",
+        ["Heroic Presence"] = "Presença Heroica",
+        ["Shadow Resistance"] = "Resistência à Sombra",
+        ["Jewelcrafting"] = "Joalheria",
+        ["Gemcutting"] = "Talhar Joias",
+        
+        -- Orcs
+        ["Blood Fury"] = "Fúria Sangrenta",
+        ["Hardiness"] = "Resiliência",
+        ["Command"] = "Comando",
+        ["Axe Specialization"] = "Especialização em Machados",
+        ["Fist Weapon Specialization"] = "Especialização em Armas de Punho",
+        
+        -- Mortos-Vivos (Renegados)
+        ["Will of the Forsaken"] = "Vontade dos Renegados",
+        ["Cannibalize"] = "Canibalizar",
+        ["Underwater Breathing"] = "Respiração Aquática",
+        ["Shadow Resistance"] = "Resistência à Sombra",
+        ["Touch of the Grave"] = "Toque da Sepultura",
+        
+        -- Taurens
+        ["War Stomp"] = "Pisoteada Bélica",
+        ["Endurance"] = "Resistência",
+        ["Cultivation"] = "Cultivo",
+        ["Nature Resistance"] = "Resistência à Natureza",
+        ["Brave"] = "Bravo",
+        
+        -- Trolls
+        ["Berserking"] = "Berserk",
+        ["Regeneration"] = "Regeneração",
+        ["Beast Slaying"] = "Matador de Feras",
+        ["Throwing Specialization"] = "Especialização em Arremesso",
+        ["Bow Specialization"] = "Especialização em Arcos",
+        ["Voodoo Shuffle"] = "Passo do Voodoo",
+        
+        -- Elfos Sangrentos
+        ["Arcane Torrent"] = "Torrente Arcana",
+        ["Arcane Affinity"] = "Afinidade Arcana",
+        ["Magic Resistance"] = "Resistência Mágica",
+        ["Mana Tap"] = "Sifão de Mana",
+        ["Conjuring"] = "Conjuração",
 }
 
+local isAddonEnabled = true  -- Variável para controlar se o addon está ativado ou não
+
+-- Função para traduzir as habilidades
 local function TranslateSpell(self, event, ...)
+    if not isAddonEnabled then return end  -- Se o addon estiver desativado, não faz nada
+
     local tooltip = GameTooltip:GetSpell()
     if tooltip then
         local spellName = GetSpellInfo(tooltip)
@@ -272,3 +409,14 @@ local function TranslateSpell(self, event, ...)
 end
 
 GameTooltip:HookScript("OnTooltipSetSpell", TranslateSpell)
+
+-- Comando /translatorspells para ativar/desativar o addon
+SLASH_TRANSLATORSPELLS1 = "/translatorspells"
+SlashCmdList["TRANSLATORSPELLS"] = function()
+    isAddonEnabled = not isAddonEnabled  -- Alterna o estado
+    if isAddonEnabled then
+        print("Addon de tradução de feitiços ativado.")
+    else
+        print("Addon de tradução de feitiços desativado.")
+    end
+end
