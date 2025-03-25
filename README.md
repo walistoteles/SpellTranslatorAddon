@@ -26,6 +26,7 @@ O addon funciona automaticamente para traduzir as descrições dos feitiços das
 - **Death Knight** (Cavaleiro da Morte)
 - **Hunter** (Caçador)
 - **Priest** (Sacerdote)
+- **Rogue**  (Ladino) 
 
 FUTURAMENTE VOU ATUALIZANDO AS TRADUÇÕES DAS OUTRAS SPELLS
 
