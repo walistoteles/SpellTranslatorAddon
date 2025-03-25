@@ -473,7 +473,124 @@ local translations = {
     ["Predatory Strikes"] = "Golpes Predatórios - +20% chance de acerto crítico em forma feral. (Passiva)",
     ["Primal Fury"] = "Fúria Primordial - Ataques críticos geram raiva/energia extra. (Passiva)",
     ["Savage Roar"] = "Rugido Selvagem - Aumenta dano físico em 40%. Custa 25 energia + 1 ponto combo.",
-    ["Survival Instincts"] = "Instintos de Sobrevivência - Reduz dano recebido em 50% por 12 seg. CD 3 min."
+    ["Survival Instincts"] = "Instintos de Sobrevivência - Reduz dano recebido em 50% por 12 seg. CD 3 min.",
+
+
+
+    -- PALADINO
+      -- Habilidades Gerais (Todas as Especializações)
+      ["Judgement"] = "Julgamento - Lança um julgamento baseado no selo ativo. Gera 1 Poder Sagrado. Alcance: 10m. CD: 10s.",
+      ["Seal of Righteousness"] = "Selo da Retidão - Ataques causam 33% dano de arma como Sagrado adicional. Dura 2 min.",
+      ["Seal of Justice"] = "Selo da Justiça - Ataques têm chance de atordoar por 2s. Dura 2 min.",
+      ["Seal of Light"] = "Selo da Luz - Ataques têm chance de curar em 33% do dano causado. Dura 2 min.",
+      ["Seal of Wisdom"] = "Selo da Sabedoria - Ataques têm chance de restaurar 4% de mana. Dura 2 min.",
+      ["Seal of Command"] = "Selo do Comando - Ataques causam 70% dano de arma como Sagrado adicional. Dura 30s.",
+      ["Seal of Vengeance"] = "Selo da Vingança - Ataques aplicam acúmulos de Sangue Sagrado (5 stacks: 15% dano adicional). Dura 2 min.",
+      ["Flash of Light"] = "Clarão de Luz - Cura rápida (1.5s) por 1994 a 2198. Custo: 18% mana.",
+      ["Holy Light"] = "Luz Sagrada - Cura poderosa (2.5s) por 7142 a 7598. Custo: 37% mana.",
+      ["Lay on Hands"] = "Imposição das Mãos - Cura 100% da vida do alvo. CD: 20 min. (Compartilha CD com outras habilidades LoH)",
+      ["Divine Protection"] = "Proteção Divina - Reduz dano recebido em 50% por 12s. CD: 5 min. (Provoca Força Divina)",
+      ["Divine Shield"] = "Escudo Divino - Imune a dano por 12s. CD: 5 min. (Provoca Força Divina)",
+      ["Hammer of Justice"] = "Martelo da Justiça - Atordoa por 6s. CD: 1 min. Alcance: 10m.",
+      ["Hand of Freedom"] = "Mão da Liberdade - Remove efeitos de enraizamento/slow. Dura 10s. CD: 25s.",
+      ["Hand of Protection"] = "Mão da Proteção - Protege o alvo contra ataques físicos por 10s. CD: 5 min.",
+      ["Hand of Sacrifice"] = "Mão do Sacrifício - Transfere 30% do dano do alvo para você por 12s. CD: 2 min.",
+  
+      -- Sagrado (Cura)
+      ["Holy Shock"] = "Choque Sagrado - Causa 1043 a 1109 dano Sagrado OU cura 1994 a 2198. CD: 6s. Custo: 21% mana.",
+      ["Beacon of Light"] = "Fanal da Luz - 50% da cura em outros alvos também cura este. Dura 1 min. Custo: 7% mana.",
+      ["Sacred Shield"] = "Escudo Sagrado - Absorve 1350 dano e aumenta críticos de cura em 50% no alvo. Dura 30s. CD: 6s.",
+      ["Divine Illumination"] = "Iluminação Divina - Reduz custo de feitiços em 50% por 15s. CD: 3 min.",
+      ["Infusion of Light"] = "Infusão de Luz - Críticos de Choque Sagrado reduzem tempo de cast da Luz Sagrada em 1.5s. (Passiva)",
+  
+      -- Proteção (Tanque)
+      ["Avenger's Shield"] = "Escudo do Vingador - Lança escudo causando 1148 a 1244 dano Sagrado em 3 alvos. Silencia por 3s. CD: 30s.",
+      ["Shield of Righteousness"] = "Escudo da Retidão - Ataque poderoso com escudo (100% dano de escudo + 430). Custa 1 Poder Sagrado.",
+      ["Holy Shield"] = "Escudo Sagrado - Aumenta bloqueio em 30% e causa 340 dano Sagrado ao bloquear. Dura 10s. CD: 10s.",
+      ["Hammer of the Righteous"] = "Martelo dos Justos - Dano em área (4 alvos) com 50% dano de arma. CD: 6s.",
+      ["Ardent Defender"] = "Defensor Ardente - Reduz dano recebido abaixo de 35% vida em 30%. (Passiva)",
+      ["Touched by the Light"] = "Tocado pela Luz - 60% do seu poder de ataque aumenta seu poder de cura. (Passiva)",
+  
+      -- Retribuição (DPS)
+      ["Crusader Strike"] = "Golpe do Cruzado - 110% dano de arma + 371. Gera 1 Poder Sagrado. CD: 4s.",
+      ["Divine Storm"] = "Tempestade Divina - Ataque em área (4 alvos) com 110% dano de arma. Custa 3 Poder Sagrado.",
+      ["Hammer of Wrath"] = "Martelo da Ira - 1148 a 1244 dano Sagrado (só em alvos <20% vida). CD: 6s. Alcance: 30m.",
+      ["Repentance"] = "Arrependimento - Incapacita humanoide/dragônico/desova por 1 min. CD: 1 min.",
+      ["The Art of War"] = "A Arte da Guerra - Críticos corpo a corpo têm 20% chance de tornar Choque Sagrado instantâneo. (Passiva)",
+      ["Sheath of Light"] = "Bainha de Luz - 30% do seu poder de ataque aumenta sua cura e 10% aumenta dano Sagrado. (Passiva)",
+  
+      -- Buffs
+      ["Blessing of Might"] = "Benção do Poder - Aumenta poder de ataque em 550. Dura 10 min.",
+      ["Blessing of Kings"] = "Benção dos Reis - Aumenta todos atributos em 10%. Dura 10 min.",
+      ["Blessing of Wisdom"] = "Benção da Sabedoria - Restaura 91 mana a cada 5s. Dura 10 min.",
+      ["Blessing of Sanctuary"] = "Benção do Santuário - Reduz dano recebido em 3% e causa 80 dano Sagrado ao bloquear/parry. Dura 10 min.",
+  
+      -- Auras
+      ["Devotion Aura"] = "Aura de Devoção - +861 armadura para o grupo. Dura até cancelada.",
+      ["Retribution Aura"] = "Aura de Retribuição - Causa 200 dano Sagrado ao ser atingido. Dura até cancelada.",
+      ["Concentration Aura"] = "Aura de Concentração - 35% chance de evitar interrupções ao conjurar. Dura até cancelada.",
+      ["Crusader Aura"] = "Aura do Cruzado - +20% velocidade de montaria. Dura até cancelada.",
+  
+      -- Passivas Importantes
+      ["Divine Purpose"] = "Propósito Divino - Habilidades têm 15% chance de não consumir Poder Sagrado. (Passiva)",
+      ["Guarded by the Light"] = "Protegido pela Luz - Evita perda de Força Divina ao usar Proteção/Escudo Divino. (Passiva)",
+      ["Judgements of the Pure"] = "Julgamentos dos Puros - Julgamentos aumentam velocidade de conjuração em 15%. (Passiva)",
+      ["Righteous Vengeance"] = "Vingança Justa - 30% do dano crítico de Selo da Vingança/Comando é causado em 8s. (Passiva)",
+      ["Vindication"] = "Reivindicação - Golpes reduzem Força/Agilidade do alvo em 10%. (Passiva)",
+
+    -- MAGO
+        -- Habilidades Gerais (Todas as Especializações)
+            ["Arcane Intellect"] = "Intelecto Arcano - Aumenta o intelecto do grupo em 60 por 30 min.",
+            ["Frostbolt"] = "Gelo de Gelo - Causa 798 a 844 dano de Gelo e reduz velocidade do alvo em 40% por 9s. Tempo de lançamento: 3s. Custo: 10% mana.",
+            ["Fireball"] = "Bola de Fogo - Causa 898 a 1144 dano de Fogo ao longo de 8s. Tempo de lançamento: 3.5s. Custo: 14% mana.",
+            ["Polymorph"] = "Polimorfia - Transforma o alvo em ovelha por 50s. CD: 3 min.",
+            ["Remove Curse"] = "Remover Maldição - Remove 1 maldição de um aliado. Custo: 8% mana.",
+            ["Counterspell"] = "Contra-feitiço - Interrompe o lançamento e silencia por 8s. CD: 24s.",
+            ["Blink"] = "Teleporte - Teleporta o mago 20m à frente. CD: 15s.",
+            ["Mana Shield"] = "Escudo de Mana - Absorve dano consumindo mana. Dura 1 min. Custo: 8% mana.",
+            ["Conjure Food"] = "Conjurar Comida - Cria 20 porções de comida mágica.",
+            ["Conjure Water"] = "Conjurar Água - Cria 20 porções de água mágica.",
+        
+            -- Arcano (DPS/Utilitário)
+            ["Arcane Blast"] = "Explosão Arcana - Causa 1125 a 1171 dano Arcano. Cada uso aumenta o custo e dano em 15% (acumula 3x). Custo: 9% mana.",
+            ["Arcane Missiles"] = "Mísseis Arcanos - Canaliza 5 mísseis causando 375 a 421 dano Arcano cada. Custo: 12% mana.",
+            ["Arcane Barrage"] = "Barragem Arcana - Causa 843 a 889 dano Arcano instantâneo. Alcance: 30m. Custo: 14% mana.",
+            ["Arcane Power"] = "Poder Arcano - Aumenta dano em 20% e custo de mana em 20% por 15s. CD: 3 min.",
+            ["Presence of Mind"] = "Presença de Espírito - Próximo feitiço arcano é instantâneo. CD: 2 min.",
+            ["Missile Barrage"] = "Barragem de Mísseis - Mísseis Arcanos têm 40% chance de se tornarem instantâneos. (Passiva)",
+            ["Arcane Concentration"] = "Concentração Arcana - Chance de 10% de entrar em estado de clareza mental (próximo feitiço sem custo). (Passiva)",
+        
+            -- Fogo (DPS)
+            ["Pyroblast"] = "Pirojato - Causa 1213 a 1539 dano de Fogo ao longo de 12s. Tempo de lançamento: 5s. Custo: 22% mana.",
+            ["Fire Blast"] = "Explosão de Fogo - Causa 709 a 755 dano de Fogo instantâneo. CD: 8s.",
+            ["Scorch"] = "Chamuscar - Causa 511 a 557 dano de Fogo e aumenta dano de Fogo em 5% (acumula 5x). Tempo de lançamento: 1.5s. Custo: 8% mana.",
+            ["Living Bomb"] = "Bomba Viva - Causa 1200 dano de Fogo em 12s, depois explode causando 1500 em área. Custo: 14% mana.",
+            ["Combustion"] = "Combustão - Aumenta chance de crítico em 10% e multiplicador de crítico em 50% por 10s. CD: 2 min.",
+            ["Hot Streak"] = "Sequência Quente - Críticos com Bola de Fogo ou Chamuscar têm chance de tornar Pirojato instantâneo. (Passiva)",
+            ["Ignite"] = "Incendiar - Críticos de Fogo causam 40% do dano adicional em 4s. (Passiva)",
+        
+            -- Gelo (DPS/Controle)
+            ["Frost Nova"] = "Nova de Gelo - Congela inimigos em 10m por 8s. CD: 25s.",
+            ["Cone of Cold"] = "Cone de Frio - Causa 595 a 641 dano de Gelo em cone. CD: 10s.",
+            ["Ice Barrier"] = "Barreira de Gelo - Absorve 1950 dano por 1 min. CD: 30s.",
+            ["Ice Block"] = "Bloco de Gelo - Torna o mago imune por 10s. CD: 5 min.",
+            ["Summon Water Elemental"] = "Invocar Elemental de Água - Invoca um elemental por 45s. CD: 3 min.",
+            ["Fingers of Frost"] = "Dedos de Gelo - Seus ataques de Gelo têm 15% chance de conceder 2 cargas de 15% de dano adicional. (Passiva)",
+            ["Brain Freeze"] = "Congelamento Cerebral - Seus ataques de Fogo têm 15% chance de tornar seu próximo Gelo de Gelo instantâneo. (Passiva)",
+        
+            -- Buffs e Utilitários
+            ["Amplify Magic"] = "Amplificar Magia - Aumenta cura recebida em 10% e dano mágico recebido em 10%. Dura 10 min.",
+            ["Dampen Magic"] = "Amortecer Magia - Reduz cura recebida em 10% e dano mágico recebido em 10%. Dura 10 min.",
+            ["Slow Fall"] = "Queda Lenta - Reduz velocidade de queda por 30s.",
+            ["Invisibility"] = "Invisibilidade - Torna o mago invisível após 3s. CD: 3 min.",
+            ["Spellsteal"] = "Roubar Feitiço - Rouba 1 efeito benéfico do alvo. Custo: 12% mana.",
+        
+            -- Passivas Importantes
+            ["Magic Absorption"] = "Absorção Mágica - Resistências aumentam seu regen de mana. (Passiva)",
+            ["Arcane Fortitude"] = "Fortitude Arcana - Aumenta armadura em 50% do seu intelecto. (Passiva)",
+            ["Master of Elements"] = "Mestre dos Elementos - 30% do custo de mana de críticos é restaurado. (Passiva)",
+            ["Winter's Chill"] = "Frio do Inverno - Seus ataques de Gelo aumentam chance de crítico em 5% (acumula 5x). (Passiva)",
+            ["Improved Scorch"] = "Chamuscar Aprimorado - Aumenta dano de Fogo em 5% (acumula 5x). (Passiva)",
 
 }
 
