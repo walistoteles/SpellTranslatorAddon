@@ -30,6 +30,7 @@ O addon funciona automaticamente para traduzir as descrições dos feitiços das
 - **Rogue**  (Ladino)
 - Mage (Mago)
 - Paladin (Paladino)
+-  Druid (Druída)
 
 FUTURAMENTE VOU ATUALIZANDO AS TRADUÇÕES DAS OUTRAS SPELLS
 
