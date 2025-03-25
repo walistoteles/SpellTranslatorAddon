@@ -1,4 +1,4 @@
-# Addon de Tradução de Feitiços - World of Warcraft
+# Addon de Tradução de Feitiços - World of Warcraft 3.3.5
 
 Este addon tem como objetivo fornecer traduções automáticas e detalhadas para as descrições das habilidades e feitiços no World of Warcraft. Com ele, as descrições dos feitiços de todas as classes, incluindo os pets, são traduzidas diretamente na interface do jogo, sem necessidade de comandos adicionais.
 
