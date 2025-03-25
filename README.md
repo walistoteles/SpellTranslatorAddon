@@ -1,12 +1,7 @@
 # Addon de Tradução de Feitiços - World of Warcraft 3.3.5
 
-Este addon tem como objetivo fornecer traduções automáticas e detalhadas para as descrições das habilidades e feitiços no World of Warcraft. Com ele, as descrições dos feitiços de todas as classes, incluindo os pets, são traduzidas diretamente na interface do jogo, sem necessidade de comandos adicionais.
+Este addon tem como objetivo fornecer traduções automáticas e detalhadas para as descrições das habilidades e feitiços no World of Warcraft. Com ele, as descrições dos feitiços de todas as classes.
 
-## Funcionalidades
-
-- **Tradução Automática**: Todas as habilidades das classes e especializações, incluindo feitiços de pets e habilidades de profissões, são traduzidas automaticamente para o português.
-- **Tradução de Feitiços**: A descrição dos feitiços é traduzida diretamente no tooltip, fornecendo uma visão clara e detalhada sobre o que cada feitiço faz.
-- **Facilidade de Uso**: Não é necessário digitar comandos ou ativar a tradução manualmente. A tradução ocorre automaticamente sempre que você passa o mouse sobre uma habilidade ou feitiço.
 
 ## Instalação
 
@@ -32,13 +27,9 @@ O addon funciona automaticamente para traduzir as descrições dos feitiços das
 
 - **Death Knight** (Cavaleiro da Morte)
 - **Hunter** (Caçador)
-- **Mage** (Mago)
-- **Paladin** (Paladino)
 - **Priest** (Sacerdote)
-- **Rogue** (Ladino)
-- **Shaman** (Xamã)
-- **Warlock** (Bruxo)
-- **Warrior** (Guerreiro)
+
+FUTURAMENTE VOU ATUALIZANDO AS TRADUÇÕES DAS OUTRAS SPELLS
 
 ### **Pets e Habilidades de Pets:**
 
