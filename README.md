@@ -11,7 +11,7 @@ Este addon tem como objetivo fornecer traduções automáticas e detalhadas para
 2. **Instale o addon no World of Warcraft**:
    - Extraia o conteúdo do ZIP para a pasta `Interface/AddOns` do seu cliente do World of Warcraft.
    - O caminho padrão de instalação é:  
-     `C:\Program Files (x86)\World of Warcraft\_retail_\Interface\AddOns`
+     `C:\Program Files (x86)\World of Warcraft\Interface\AddOns`
 
 3. **Ative o addon**:
    - No menu de carregamento do World of Warcraft, vá até a aba "AddOns" e verifique se o addon está listado e ativado.
