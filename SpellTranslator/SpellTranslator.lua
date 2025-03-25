@@ -1,109 +1,151 @@
 local translations = {
 
        -- Traduções para as magias do Priset (Sarcerdote)
+    -- Habilidades Gerais (Todas as Especializações)
+    ["Power Word: Shield"] = "Palavra de Poder: Escudo - Absorve 2230 de dano e previne interrupções por 30s. Custa 19% de mana. CD 4s.",
+    ["Flash Heal"] = "Cura Rápida - Cura 1923 a 2127. Cast rápido (1.5s). Custa 18% de mana.",
+    ["Renew"] = "Renovar - Cura 1360 ao longo de 15s. Custa 10% de mana.",
+    ["Psychic Scream"] = "Grito Psíquico - Faz 5 inimigos fugirem por 8s. CD 30s.",
+    ["Dispel Magic"] = "Dissipar Magia - Remove 2 efeitos mágicos benéficos de inimigos ou prejudiciais de aliados. Custa 8% de mana.",
+    ["Fade"] = "Desvanecer - Reduz ameaça por 10s. CD 30s.",
 
-    ["Power Word: Shield"] = "Escuda um aliado, absorvendo uma quantidade de dano. Enquanto o escudo durar, a ativação de atraso de lançamento de feitiço devido a dano recebido é reduzida. Dura 30 s.",
-    ["Flash Heal"] = "Uma cura rápida que restaura instantaneamente uma quantidade de vida de um alvo amigável.",
-    ["Renew"] = "Cura o alvo em uma quantidade ao longo de 15 s.",
-    ["Smite"] = "Golpeia um inimigo com energia sagrada, causando dano Sagrado.",
-    ["Holy Fire"] = "Consome um inimigo em chamas sagradas, causando dano Sagrado instantaneamente e dano Sagrado adicional ao longo de 7 s.",
-    ["Greater Heal"] = "Uma cura lenta que restaura uma grande quantidade de vida do alvo.",
-    ["Prayer of Healing"] = "Uma poderosa prece que cura todos os membros do grupo do lançador dentro de um raio de 30 metros.",
-    ["Divine Spirit"] = "Abençoa o alvo com um aumento de Espírito por 30 min.",
-    ["Dispel Magic"] = "Remove 2 efeitos mágicos benéficos de um inimigo ou 2 efeitos mágicos prejudiciais de um aliado.",
-    ["Cure Disease"] = "Remove 1 doença do alvo.",
-    ["Abolish Disease"] = "Tenta remover uma doença do alvo a cada 5 s durante 20 s.",
-    ["Mind Blast"] = "Ataca a mente de um inimigo com energia sombria, causando dano de Sombra.",
-    ["Mind Flay"] = "Assalta a mente do inimigo com energia sombria, causando dano de Sombra ao longo de 3 s e reduzindo a velocidade de movimento do alvo em 50%.",
-    ["Shadow Word: Pain"] = "Uma palavra de escuridão que causa dano de Sombra ao longo de 18 s.",
-    ["Shadowfiend"] = "Invoca uma criatura das sombras para atacar o inimigo. Cada ataque corpo a corpo da criatura restaura mana para você. Dura 15 s.",
-    ["Power Word: Fortitude"] = "Abençoa um alvo amigável com resistência aumentada por 30 min.",
-    ["Fear Ward"] = "Protege um alvo amigável, tornando-o imune ao próximo efeito de Medo. Dura 3 min.",
-    ["Levitate"] = "Permite ao lançador ou um alvo aliado andar sobre a água e reduzir o dano de queda. Qualquer dano recebido cancela o efeito. Dura 10 min.",
-    ["Shackle Undead"] = "Prende um morto-vivo, impedindo-o de agir por até 50 s. Qualquer dano causado pode interromper o efeito.",
-    ["Hymn of Hope"] = "Restaura mana ao longo do tempo para aliados próximos com menos de 50% de mana e aumenta temporariamente sua mana máxima. Dura 8 s.",
-    ["Mass Dispel"] = "Tenta remover um efeito mágico prejudicial de cada aliado e um efeito mágico benéfico de cada inimigo em um raio de 15 metros. Pode remover efeitos normalmente irremovíveis.",
-    ["Pain Suppression"] = "Aumenta a resistência a Dissipar do alvo e reduz todo o dano recebido em 40% por 8 s.",
-    ["Circle of Healing"] = "Cura instantaneamente um membro do grupo ou raide e todos os aliados dentro de 15 metros do alvo.",
-    ["Penance"] = "Canaliza energia sagrada em um alvo, curando um aliado ou causando dano Sagrado a um inimigo em 3 golpes rápidos ao longo de 2 s.",
-    ["Binding Heal"] = "Cura o lançador e um alvo amigável por uma quantidade moderada de vida.",
-    ["Prayer of Mending"] = "Coloca uma prece de cura no alvo, curando-o na próxima vez que receber dano. Depois de curar, salta para um aliado próximo. Salta até 5 vezes e dura 30 s.",
-    ["Vampiric Touch"] = "Ataca o inimigo, causando dano de Sombra ao longo de 15 s. Quando o alvo for atingido por Mind Blast, você restaura mana para si e membros do grupo.",
-    ["Devouring Plague"] = "Afeta o alvo com uma praga que causa dano de Sombra ao longo de 24 s e restaura vida ao lançador equivalente a 15% do dano causado.",
-    ["Shadowform"] = "Assume a Forma Sombria, aumentando o dano de Sombra em 15% e reduzindo o dano físico recebido em 15%. Você não pode lançar feitiços Sagrados nesta forma.",
-    ["Dispersion"] = "Você se dissipa em pura energia das sombras por 6 s, reduzindo todo o dano recebido em 90% e restaurando 6% da sua mana total a cada segundo. Durante este tempo, você não pode atacar ou lançar feitiços.",
-    ["Silence"] = "Silencia o alvo, impedindo-o de lançar feitiços por 5 s.",
-    ["Mind Control"] = "Controla a mente do inimigo humanoide, permitindo que você o manipule por até 30 s.",
-    ["Fade"] = "Reduz temporariamente sua ameaça, fazendo com que os inimigos o ignorem por 10 s.",
-    ["Inner Fire"] = "Aumenta o poder de feitiço e a armadura. Cada ataque corpo a corpo recebido reduz a duração em uma carga.",
-    ["Inner Focus"] = "Quando ativado, seu próximo feitiço de cura ou dano tem sua chance de acerto crítico aumentada em 25% e não custa mana.",
-    ["Holy Nova"] = "Emite uma explosão de luz sagrada ao redor do lançador, causando dano Sagrado a inimigos e curando aliados dentro de 10 metros.",
-    ["Mind Sear"] = "Causa dano de Sombra ao longo de 5 s a todos os inimigos ao redor do alvo.",
-    ["Psychic Scream"] = "Faz até 5 inimigos ao seu redor fugirem em pânico por 8 s.",
-    ["Shadow Word: Death"] = "Uma palavra de condenação que causa dano de Sombra ao alvo. Se o alvo não morrer, o lançador recebe um dano igual ao causado.",
-    ["Guardian Spirit"] = "Invoca um espírito guardião para proteger o alvo por 10 s, aumentando a cura recebida em 40%. Se o alvo morrer, o espírito se sacrifica para revivê-lo com 50% da vida.",
-    ["Lightwell"] = "Cria um Poço de Luz. Os aliados podem clicar para recuperar vida ao longo do tempo. Qualquer dano recebido cancela o efeito. Dura 3 min ou 10 usos.",
-    ["Reflective Shield"] = "Seu Power Word: Shield reflete parte do dano absorvido de volta ao atacante.",
-    ["Surge of Light"] = "Seus feitiços têm uma chance de conceder um lançamento instantâneo de Smite ou Flash Heal sem custo de mana.",
+    -- Disciplina (Prevenção de Dano)
+    ["Penance"] = "Penitência - Canaliza 3 rajadas que curam 1563 a 1657 cada OU causam 786 a 832 de dano Sagrado. CD 12s.",
+    ["Power Infusion"] = "Infusão de Poder - Aumenta dano/cura em 20% e reduz custo de mana em 20% por 15s. CD 2 min.",
+    ["Pain Suppression"] = "Supressão da Dor - Reduz dano recebido pelo alvo em 40% por 8s. CD 3 min.",
+    ["Divine Aegis"] = "Égide Divina - Críticos de cura criam um escudo absorvendo 30% do valor curado. (Passiva)",
+    ["Rapture"] = "Êxtase - Quando Escudo é consumido, restaura 2.5% de mana. (Passiva)",
+
+    -- Sagrado (Cura)
+    ["Greater Heal"] = "Cura Maior - Cura 4465 a 4839. Cast longo (3s). Custa 26% de mana.",
+    ["Prayer of Healing"] = "Prece de Cura - Cura 1923 a 2127 em 5 membros do grupo. Custa 32% de mana. CD 10s.",
+    ["Circle of Healing"] = "Círculo de Cura - Cura 1923 a 2127 em 5 aliados próximos do alvo. CD 6s.",
+    ["Guardian Spirit"] = "Espírito Guardião - Previne a morte do alvo, curando 50% da vida quando ativado. Dura 10s. CD 3 min.",
+    ["Serendipity"] = "Serendipidade - Reduz tempo de cast da Cura Maior/Prece em 4/8/12% por críticos de Cura Rápida/Palavra de Poder. (Passiva)",
+
+    -- Sombra (DPS)
+    ["Shadow Word: Pain"] = "Palavra das Sombras: Dor - Causa 1740 de dano de Sombra em 18s. Custa 9% de mana.",
+    ["Mind Blast"] = "Explosão Mental - Causa 1047 a 1093 de dano de Sombra. CD 8s. Custa 12% de mana.",
+    ["Mind Flay"] = "Flagelo Mental - Canaliza 3 pulsos de 572 a 618 de dano de Sombra por 3s, reduz velocidade em 50%. Custa 9% de mana.",
+    ["Vampiric Touch"] = "Toque Vampírico - Causa 1100 de dano de Sombra em 15s e restaura 1% de mana do grupo por dano da Explosão Mental. Custa 11% de mana.",
+    ["Shadowform"] = "Forma Sombria - +15% dano de Sombra, -15% dano físico recebido. Não pode usar magias Sagradas.",
+    ["Dispersion"] = "Dispersão - Reduz dano recebido em 90% e restaura 6% de mana por segundo por 6s. CD 3 min.",
+
+    -- Buffs e Utilitários
+    ["Power Word: Fortitude"] = "Palavra de Poder: Fortitude - Aumenta stamina em 165 por 30 min.",
+    ["Divine Spirit"] = "Espírito Divino - Aumenta espírito em 80 por 30 min.",
+    ["Shadow Protection"] = "Proteção contra as Sombras - Aumenta resistência a Sombra em 130 por 10 min.",
+    ["Levitate"] = "Levitar - Permite flutuar sobre terreno e água. Dura 10 min.",
+
+    -- Passivas Importantes
+    ["Spirit Tap"] = "Sifão Espiritual - Críticos de dano têm 100% chance de restaurar 5% de mana. (Passiva - Especialização Sombra)",
+    ["Improved Spirit Tap"] = "Sifão Espiritual Aprimorado - +50% regeneração de mana por 8s após matar um alvo. (Passiva)",
+    ["Twisted Faith"] = "Fé Distorcida - 15% do seu espírito aumenta seu poder de feitiço. (Passiva)",
+    ["Surge of Light"] = "Onda de Luz - Críticos têm 25% chance de conceder Cura Rápida/Explosão Mental instantânea e sem custo. (Passiva)",
+
+
+       -- Habilidades de Dano Sagrado
+       ["Smite"] = "Golpe Sagrado - Causa 759 a 805 de dano Sagrado. Cast de 2.5s. Custa 11% de mana.",
+       ["Holy Fire"] = "Fogo Sagrado - Causa 647 a 693 de dano Sagrado instantâneo + 600 em 7s. CD 10s. Custa 12% de mana.",
+       ["Holy Nova"] = "Nova Sagrada - Explosão que causa 429 a 473 de dano Sagrado a inimigos OU cura 429 a 473 em aliados em 10m. Custa 21% de mana.",
+   
+       -- Habilidades de Cura Adicionais
+       ["Binding Heal"] = "Cura Vinculada - Cura 1923 a 2127 em você e no alvo. Custa 27% de mana.",
+       ["Prayer of Mending"] = "Prece do Conserto - Salta entre aliados, curando 1923 a 2127 ao receber dano. Dura 30s ou 5 saltos. Custa 15% de mana.",
+       ["Lightwell"] = "Poço de Luz - Cria um poço curando 1923 a 2127 por uso (10 cargas). Dura 3 min. Custa 28% de mana.",
+   
+       -- Habilidades de Controle
+       ["Shackle Undead"] = "Algemar Morto-Vivo - Incapacita um morto-vivo por até 50s. CD 30s. Custa 9% de mana.",
+       ["Mind Control"] = "Controle Mental - Controla humanoide por 30s. CD 1 min. Custa 12% de mana.",
+       ["Silence"] = "Silêncio - Silencia o alvo por 5s. CD 45s. Apenas Especialização Sombra.",
+   
+       -- Remoção de Efeitos
+       ["Abolish Disease"] = "Abolir Doença - Remove 1 doença do alvo a cada 5s por 20s. Custa 8% de mana.",
+       ["Cure Disease"] = "Curar Doença - Remove 1 doença do alvo. Custa 8% de mana.",
+       ["Mass Dispel"] = "Dissipação em Massa - Remove efeitos mágicos em área. CD 15s. Custa 24% de mana.",
+   
+       -- Habilidades Defensivas Adicionais
+       ["Inner Fire"] = "Fogo Interior - Aumenta poder de feitiço em 165 e armadura em 2850. Dura 10 min. Custa 8% de mana.",
+       ["Fear Ward"] = "Proteção contra Medo - Imunidade a 1 efeito de Medo. Dura 3 min. CD 3 min. (Apenas Anões)",
+       ["Desperate Prayer"] = "Prece Desesperada - Cura instantânea de 1923 a 2127. CD 2 min. (Apenas Humanos/Anões)",
+   
+       -- Habilidades de Sombra Adicionais
+       ["Shadow Word: Death"] = "Palavra das Sombras: Morte - Causa 786 a 832 de dano de Sombra. Se o alvo não morrer, causa 50% do dano ao sacerdote. CD 12s.",
+       ["Mind Sear"] = "Revirar Mentes - Canaliza dano em área (572 a 618 por pulso) por 5s. Custa 9% de mana.",
+       ["Devouring Plague"] = "Praga Devoradora - Causa 1100 de dano de Sombra em 24s e cura 15% do dano. Custa 15% de mana. CD 24s.",
+   
+       -- Passivas Críticas Adicionais
+       ["Blessed Resilience"] = "Resiliência Abençoada - +3% chance de crítico em cura e reduz dano recebido após crítico. (Passiva)",
+       ["Inspiration"] = "Inspiração - Críticos de cura aumentam armadura do alvo em 25% por 15s. (Passiva)",
+       ["Shadow Weaving"] = "Tecelagem das Sombras - Ataques de Sombra aumentam dano de Sombra em 3% (acumula 5x). (Passiva)",
+   
+       -- Totêmico (Raça Anã)
+       ["Chastise"] = "Castigar - Atordoa o alvo por 2s. CD 30s. (Apenas Anões)",
     
     -- Traduções para as magias do Death Knight (DK)
-    ["Death Grip"] = "Puxa um inimigo em sua direção, causando dano e interrompendo o que ele estiver fazendo.",
-    ["Death Coil"] = "Lança uma rajada de energia sombria que causa dano a um inimigo e cura o lançador, se ele for um morto-vivo.",
-    ["Icebound Fortitude"] = "Aumenta a resistência e torna você imune a efeitos de controle de multidão. Dura 8 s.",
-    ["Mind Freeze"] = "Interrompe o lançamento de feitiços de um inimigo e causa dano de Gelo.",
-    ["Obliterate"] = "Destrói o inimigo com uma poderosa lâmina congelada, causando dano físico.",
-    ["Rune Strike"] = "Desferre um golpe poderoso que causa dano adicional quando o inimigo erra um ataque.",
-    ["Death Pact"] = "Gasta uma parte de sua vida para curar uma quantidade de vida equivalente ao dano que você causou nos últimos 5 s.",
-    ["Unholy Frenzy"] = "Aumenta a velocidade de ataque e dano de um aliado, mas o alvo perde uma porcentagem de sua vida.",
-    ["Summon Gargoyle"] = "Invoca um gárgula que ataca inimigos à distância, causando dano com ataques físicos e mágicos.",
-    ["Vampiric Blood"] = "Aumenta a quantidade de vida que você recebe de cura e absorção de dano, além de regenerar vida ao causar dano.",
-    ["Anti-Magic Shell"] = "Cria uma barreira mágica que absorve uma quantidade de dano mágico, imunizando o lançador contra feitiços.",
-    ["Chains of Ice"] = "Conjura correntes de gelo que aprisionam o inimigo, reduzindo sua velocidade de movimento e impedindo que ele se mova.",
-    ["Death and Decay"] = "Causa dano em área em uma área designada, aplicando dano de Sombra aos inimigos ao longo do tempo.",
-    ["Army of the Dead"] = "Invoca uma legião de mortos-vivos para lutar ao seu lado, atacando todos os inimigos próximos.",
-    ["Pestilence"] = "Espalha uma praga de pestilência que afeta inimigos próximos, causando dano de Sombra ao longo do tempo.",
-    ["Strangulate"] = "Estrangula o inimigo, impedindo-o de falar ou lançar feitiços por 5 s.",
-    ["Raise Ally"] = "Ressuscita um aliado morto, restaurando uma quantidade de vida e mana. O aliado ressuscitado permanece com 20% de saúde e 20% de mana. Dura 10 min.",
-    ["Death's Advance"] = "Aumenta sua velocidade de movimento em 35%, tornando-o imune a efeitos que reduzem a velocidade e a efeitos que o forçam a se mover. Dura 10 s.",
-    ["Wraith Walk"] = "Aumenta sua velocidade de movimento em 70%. Qualquer habilidade usada durante o efeito cancelará o feitiço. Dura 4 s.",
-    ["Abomination Limb"] = "Cria um braço extra que causa dano em área ao redor de você e puxa inimigos próximos para sua posição. Dura 12 s.",
-    ["Soul Reaper"] = "Aplica uma marca no inimigo. Após 5 s, se o alvo estiver abaixo de 35% de saúde, a marca explode, causando dano de Sombra e Gelo.",
-    ["Blood Strike"] = "Golpeia o inimigo com sua arma, causando dano físico. Consome uma runa de Sangue.",
-    ["Death Strike"] = "Golpeia o inimigo com sua arma, causando dano físico e curando uma quantidade de vida baseada no dano recebido nos últimos 5 s.",
-    ["Blood Boil"] = "Libera uma explosão de energia sangrenta ao redor de você, causando dano de Sangue a todos os inimigos próximos.",
-    ["Rune Tap"] = "Gasta Runic Power para reduzir o dano recebido por um curto período.",
-    ["Mark of Blood"] = "Marca um inimigo, fazendo com que ele cause menos dano a você e mais dano a si mesmo ao atacá-lo.",
-    ["Blood Worms"] = "Conjura vermes de sangue que atacam inimigos próximos, curando você quando causam dano.",
-    ["Blood Mirror"] = "Reflete uma porcentagem do dano recebido de volta ao atacante.",
-    ["Bonestorm"] = "Cria uma tempestade de ossos ao seu redor, causando dano físico a todos os inimigos próximos e curando você.",
-    ["Consume Vitality"] = "Consome a vitalidade de um inimigo, causando dano e curando você.",
-    ["Blood Shield"] = "Cria um escudo que absorve dano, baseado na quantidade de cura recebida recentemente.",
-    ["Mastery: Blood Shield"] = "Sua maestria aumenta a quantidade de dano absorvido pelo seu escudo de sangue.",
-    ["Frost Strike"] = "Golpeia o inimigo com sua arma, causando dano físico e consumindo Runic Power.",
-    ["Howling Blast"] = "Libera um grito gelado que causa dano de Gelo a todos os inimigos em uma área frontal.",
-    ["Remorseless Winter"] = "Libera uma rajada de vento gelado ao seu redor, causando dano de Gelo e reduzindo a velocidade de movimento dos inimigos.",
-    ["Glacial Advance"] = "Avança em direção ao inimigo, causando dano de Gelo a todos os inimigos no caminho.",
-    ["Frozen Pulse"] = "Libera uma onda de energia congelante ao seu redor, causando dano de Gelo a todos os inimigos próximos.",
-    ["Frostscythe"] = "Golpeia todos os inimigos à sua frente com uma lâmina de gelo, causando dano de Gelo.",
-    ["Obliteration"] = "Aumenta o dano de Obliterate e concede uma chance de disparar uma explosão de gelo.",
-    ["Frostwyrm's Fury"] = "Invoca um dragão de gelo que causa dano de Gelo a todos os inimigos próximos.",
-    ["Glacial Spike"] = "Lança uma estaca de gelo maciço que causa dano de Gelo ao atingir o inimigo.",
-    ["Mastery: Frozen Heart"] = "Sua maestria aumenta o dano de suas habilidades de Gelo e reduz o dano recebido.",
-    ["Unholy Blight"] = "Libera uma nuvem de energia pestilenta que causa dano de Sombra aos inimigos ao longo do tempo e os impede de se curar.",
-    ["Army of the Dead"] = "Invoca uma legião de mortos-vivos para lutar ao seu lado, atacando todos os inimigos próximos.",
-    ["Summon Abomination"] = "Invoca uma Abominação que causa dano aos inimigos próximos e libera uma nuvem de gás venenoso.",
-    ["Death and Decay"] = "Causa dano em área em uma área designada, aplicando dano de Sombra aos inimigos ao longo do tempo.",
-    ["Outbreak"] = "Libera uma onda de pestilência que afeta todos os inimigos ao redor, aplicando a Doença nos inimigos.",
-    ["Epidemic"] = "Dispara uma onda de pestilência que afeta todos os inimigos próximos e causa dano adicional baseado no número de Doenças ativas.",
-    ["Unholy Frenzy"] = "Aumenta a velocidade de ataque e dano de um aliado, mas o alvo perde uma porcentagem de sua vida.",
-    ["Pestilence"] = "Espalha uma praga de pestilência que afeta inimigos próximos, causando dano de Sombra ao longo do tempo.",
-    ["Mastery: Dreadblade"] = "Sua maestria aumenta o dano de suas habilidades Profanas e o dano causado por seus pets.",
-    ["Blood Tap"] = "Converte uma parte de sua saúde em Runas, permitindo que você use uma habilidade adicional. Quanto mais saúde você sacrificar, mais Runas você recebe.",
-    ["Hysteria"] = "Aumenta o dano do alvo em 30%, mas também aumenta o dano que ele recebe em 20%. Dura 30 s.",
-    ["Horn of Winter"] = "Sopra um trompete gélido que aumenta a Força e a Agilidade dos aliados em 10% por 1 min. Além disso, restaura 10% do poder de runa de todos os aliados em um raio de 30 metros.",
-    ["Blood Presence"] = "A presença do sangue aumenta sua ameaça e torna sua força vital mais resiliente, aumentando a absorção de dano e o poder de cura.",
-    ["Frost Presence"] = "A presença do gelo aumenta a resistência e a redução de dano recebido, enquanto aumenta o dano causado por habilidades de gelo.",
-    ["Unholy Presence"] = "A presença profana aumenta a velocidade de movimento e de ataque, enquanto também aumenta o dano causado por habilidades de Sombra.",
+
+      -- Passivas Críticas
+        ["Blood of the North"] = "Sangue do Norte - Golpes de Sangue e Coração têm 15% chance de conceder uma Runa de Morte. (Passiva)",
+        ["Killing Machine"] = "Máquina de Matar - Ataques corpo a corpo têm 15% chance de tornar seu próximo Obliterar/Golpe Gélido um crítico. (Passiva)",
+        ["Master of Ghouls"] = "Mestre dos Ghouls - Seu Ghoul permanente ganha habilidades adicionais. (Passiva)",
+
+
+        -- Habilidades Gerais (Todas as Especializações)
+        ["Death Coil"] = "Espiral da Morte - Causa 739 a 785 dano de Sombra OU cura um aliado morto-vivo por 1563 a 1657. Custa 40 de Poder Rúnico.",
+        ["Death Strike"] = "Golpe da Morte - Causa 75% dano de arma + 643. Cura 10% da vida por cada doença no alvo. Custa 1 Runa de Gelo e 1 Runa de Sangue.",
+        ["Plague Strike"] = "Golpe da Peste - Causa 50% dano de arma + 138 e aplica *Peste Hemorrágica*. Custa 1 Runa de Profano.",
+        ["Icy Touch"] = "Toque Gélido - Causa 786 a 832 dano de Gelo e aplica *Febre Gélida*. Custa 1 Runa de Gelo.",
+        ["Obliterate"] = "Obliterar - Causa 200% dano de arma + 333. Consome doenças no alvo para +25% dano por doença. Custa 2 Runas de Gelo.",
+        ["Blood Strike"] = "Golpe de Sangue - Causa 60% dano de arma + 180. Custa 1 Runa de Sangue.",
+        ["Horn of Winter"] = "Trompa do Inverno - Concede +155 Força/Agilidade ao grupo por 2 min. Custa 20 de Poder Rúnico.",
+        ["Chains of Ice"] = "Correntes de Gelo - Reduz velocidade do alvo em 60% por 8s. Custa 1 Runa de Gelo.",
+        ["Mind Freeze"] = "Congelamento Mental - Interrompe o lançamento e silencia por 4s. Custa 20 de Poder Rúnico. CD 10s.",
+        ["Strangulate"] = "Estrangular - Silencia o alvo por 5s. CD 2 min. (Apenas Sangue/Profano)",
+        ["Empower Rune Weapon"] = "Empoderar Arma Rúnica - Ativa todas as Runas imediatamente. CD 5 min.",
+    
+        -- Sangue (Tank/DPS)
+        ["Blood Boil"] = "Fervor de Sangue - Causa 482 a 518 dano de Sangue em área. Danos dobrados em alvos com doenças. Custa 1 Runa de Sangue.",
+        ["Heart Strike"] = "Golpe Cardíaco - Causa 125% dano de arma + 302 em até 2 alvos. Custa 1 Runa de Sangue.",
+        ["Vampiric Blood"] = "Sangue Vampírico - Aumenta vida máxima em 15% e cura recebida em 35% por 20s. CD 1 min.",
+        ["Rune Tap"] = "Toque Rúnico - Cura 10% da vida. Custa 1 Runa de Sangue. CD 30s.",
+        ["Mark of Blood"] = "Marca de Sangue - Alvo causa 50% menos dano e se cura por 4% da vida ao atacar. Dura 20s.",
+        ["Hysteria"] = "Histeria - Aumenta dano físico do alvo em 20% por 30s, mas recebe 1% de dano por segundo. CD 3 min.",
+        ["Blood Tap"] = "Sangrar - Converte 1 Runa de Morte em 1 Runa ativa. CD 1 min.",
+    
+        -- Gelo (DPS/Tank)
+        ["Howling Blast"] = "Explosão Ululante - Causa 786 a 832 dano de Gelo em área + aplica *Febre Gélida*. Custa 1 Runa de Gelo.",
+        ["Frost Strike"] = "Golpe Gélido - Causa 230% dano de arma como Gelo. Custa 40 de Poder Rúnico.",
+        ["Icebound Fortitude"] = "Determinação Gélida - Reduz dano recebido em 30% e imunidade a stuns por 12s. CD 2 min.",
+        ["Pillar of Frost"] = "Pilar de Gelo - Aumenta Força em 25% por 20s. CD 1 min.",
+        ["Hungering Cold"] = "Frio Voraz - Congela todos os inimigos em 10m por 10s. CD 1 min. (Apenas Gelo)",
+        ["Unbreakable Armor"] = "Armadura Inquebrável - Aumenta armadura em 25% e Força em 10%. Dura 20s. CD 1 min.",
+    
+        -- Profano (DPS)
+        ["Scourge Strike"] = "Golpe do Flagelo - Causa 80% dano de arma + 666 como Sombra. +40% dano por doença no alvo. Custa 1 Runa de Profano.",
+        ["Death and Decay"] = "Morte e Degradação - Zona de 474 a 526 dano de Sombra por s por 10s. Custa 1 Runa de Sangue, Gelo e Profano.",
+        ["Summon Gargoyle"] = "Invocar Gárgula - Invoca uma Gárgula que ataca por 30s. Custa 60 de Poder Rúnico. CD 3 min.",
+        ["Army of the Dead"] = "Exército dos Mortos - Invoca 8 Ghouls por 40s. CD 10 min.",
+        ["Corpse Explosion"] = "Explosão de Cadáver - Faz um cadáver explodir causando 50% do HP do cadáver como dano em área. Custa 1 Runa de Profano.",
+        ["Bone Shield"] = "Escudo de Ossos - Absorve 20% do dano recebido (4 cargas). Dura 5 min. CD 1 min.",
+    
+        -- Presenças (Ativas)
+        ["Blood Presence"] = "Presença de Sangue - +15% dano, +8% cura recebida, +45% ameaça.",
+        ["Frost Presence"] = "Presença Gélida - +10% Stamina, +60% armadura, +45% ameaça.",
+        ["Unholy Presence"] = "Presença Profana - +15% velocidade de ataque, +10% velocidade de movimento.",
+    
+        -- Utilitários
+        ["Death Grip"] = "Presa da Morte - Puxa o alvo para perto e gera alta ameaça. CD 25s.",
+        ["Anti-Magic Shell"] = "Escudo Antimagia - Absorve até 75% do dano mágico por 5s. CD 45s.",
+        ["Raise Ally"] = "Ressuscitar Aliado - Revive um jogador como Ghoul por 5 min (versão fora de combate).",
+        ["Path of Frost"] = "Caminho da Geada - Permite andar sobre água e congela inimigos ao entrar em combate.",
+        ["Death Pact"] = "Pacto da Morte - Consome seu Ghoul para curar 40% da vida. CD 2 min.",
+    
+        -- Passivas Críticas
+        ["Blood of the North"] = "Sangue do Norte - Golpes de Sangue e Coração têm 15% chance de conceder uma Runa de Morte. (Passiva)",
+        ["Killing Machine"] = "Máquina de Matar - Ataques corpo a corpo têm 15% chance de tornar seu próximo Obliterar/Golpe Gélido um crítico. (Passiva)",
+        ["Master of Ghouls"] = "Mestre dos Ghouls - Seu Ghoul permanente ganha habilidades adicionais. (Passiva)",
+        ["Night of the Dead"] = "Noite dos Mortos - Reduz CD do Exército dos Mortos em 5 min e da Ressuscitar Aliado em 15s. (Passiva)",
+        ["Crypt Fever"] = "Febre Cripta - Aumenta duração das doenças em 6s. (Passiva)",
 
     -- Habilidades do Caçador
     ["Aimed Shot"] = "Um disparo poderoso que causa dano considerável ao inimigo. Demora um tempo para se preparar.",
@@ -314,6 +356,7 @@ local translations = {
 
     -- Passivas Raciais
 
+
         -- Humanos
         ["Every Man for Himself"] = "Cada um por si",
         ["The Human Spirit"] = "O Espírito Humano",
@@ -384,6 +427,54 @@ local translations = {
         ["Magic Resistance"] = "Resistência Mágica",
         ["Mana Tap"] = "Sifão de Mana",
         ["Conjuring"] = "Conjuração",
+    
+    
+-- DRUIDAS
+  -- Formas
+  ["Dire Bear Form"] = "Forma de Urso - Transforma o druida em um urso, aumentando armadura e vida, permitindo o uso de habilidades de tanque.",
+  ["Cat Form"] = "Forma de Felino - Transforma o druida em um felino, aumentando o dano corpo a corpo e permitindo o uso de habilidades de combate furtivo.",
+  ["Travel Form"] = "Forma de Viagem - Transforma o druida em um felino mais rápido ou em um cervo (Aquático), aumentando a velocidade de movimento.",
+  ["Moonkin Form"] = "Forma de Luniscante - Transforma o druida em um Luniscante, aumentando o dano arcano e natural, e concedendo 5% de chance de acerto crítico a aliados próximos.",
+  ["Tree of Life"] = "Árvore da Vida - Transforma o druida em uma Árvore da Vida, reduzindo o custo de mana de feitiços de cura e fortalecendo curas em grupo.",
+  ["Aquatic Form"] = "Forma de Thais Carla - Transforma o Druida em uma forma aquática, permitindo nadar rapidamente e respirar debaixo d'água. Dura até ser cancelada.",
+
+  -- Combate Feral
+-- Habilidades Gerais (Urso/Felino)
+    ["Prowl"] = "Espreitar - Permite movimentação furtiva na forma felina, reduzindo velocidade em 30%. Atacar saindo do Espreitar causa dano aumentado.",
+    ["Track Humanoids"] = "Rastrear Humanoides - Revela humanoides próximos no minimapa. (Passiva)",
+    ["Feral Instinct"] = "Instinto Feral - Aumenta dano causado em 15% e ameaça em Urso em 15%/30%. (Passiva)",
+    
+    -- Habilidades de Urso (Tanque)
+    ["Growl"] = "Rosnar - Força o alvo a atacar você por 3 segundos.",
+    ["Maul"] = "Espancar - Ataque instantâneo que causa 578 a 638 dano e alta ameaça. Custa 15 raiva.",
+    ["Swipe"] = "Golpear (Urso) - 360º de dano em área, 95 a 129 dano. Custa 20 raiva.",
+    ["Mangle"] = "Mutilar (Urso) - 578 a 638 dano + 30% dano em sangramentos. Gera alta ameaça.",
+    ["Lacerate"] = "Lacerar - Causa dano inicial + sangramento (acumula 3x). Gera ameaça alta.",
+    ["Demoralizing Roar"] = "Rugido Desmoralizante - Reduz dano físico de inimigos em 10% por 30 seg.",
+    ["Challenging Roar"] = "Rugido Desafiante - Força todos os inimigos em 10m a atacarem você por 6 seg.",
+    ["Frenzied Regeneration"] = "Regeneração Frenética - Converte 10 raiva em 3% de vida a cada 1 seg por 10 seg.",
+    
+    -- Habilidades de Felino (DPS)
+    ["Claw"] = "Garra - 100% dano de arma + 29. Gera 1 ponto de combo. Custa 45 energia.",
+    ["Rake"] = "Arranhar - 176 a 194 dano + 304 em 9 seg (DOT). Custa 40 energia.",
+    ["Shred"] = "Triturar - 450% dano se atrás do alvo + 10% crit. Custa 60 energia.",
+    ["Rip"] = "Rasgar - Sangramento potente baseado em pontos de combo (5: 1556 em 12 seg).",
+    ["Ferocious Bite"] = "Mordida Feroz - Consome até 35 energia + pontos de combo (5: 1550 a 1695 dano).",
+    ["Pounce"] = "Investida (Furtivo) - Atordoa por 3 seg + 990 dano em 18 seg (DOT). Custa 50 energia.",
+    ["Ravage"] = "Devastar (Furtivo) - 950% dano de arma. Custa 60 energia.",
+    ["Tiger's Fury"] = "Fúria do Tigre - Aumenta dano em 80% por 6 seg. Recarrega a cada 30 seg.",
+    ["Dash"] = "Arrancada - Aumenta velocidade em 70% por 15 seg. Custa 30 energia.",
+    
+    -- Buffs
+    ["Mark of the Wild"] = "Marca da Natureza - +37 todos atributos, +70 armadura, +18 resistências. Dura 30 min.",
+    ["Thorns"] = "Espinhos - Causa 78 dano de natureza a quem atacar o alvo. Dura 10 min.",
+    
+    -- Passivas Feral
+    ["Predatory Strikes"] = "Golpes Predatórios - +20% chance de acerto crítico em forma feral. (Passiva)",
+    ["Primal Fury"] = "Fúria Primordial - Ataques críticos geram raiva/energia extra. (Passiva)",
+    ["Savage Roar"] = "Rugido Selvagem - Aumenta dano físico em 40%. Custa 25 energia + 1 ponto combo.",
+    ["Survival Instincts"] = "Instintos de Sobrevivência - Reduz dano recebido em 50% por 12 seg. CD 3 min."
+
 }
 
 local isAddonEnabled = true  -- Variável para controlar se o addon está ativado ou não
