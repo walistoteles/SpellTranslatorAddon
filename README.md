@@ -18,8 +18,9 @@ Este addon tem como objetivo fornecer traduções automáticas e detalhadas para
    - Caso o addon não funcione imediatamente, recarregue a interface pressionando `/reload` no chat do jogo.
 
 ## Funcionalidade Detalhada
-
+pra desligar e ligar a tradução você pode Digitar `/translatorspells`
 O addon funciona automaticamente para traduzir as descrições dos feitiços das seguintes categorias:
+
 
 ### **Classes:**
 
