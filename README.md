@@ -20,6 +20,7 @@ Este addon tem como objetivo fornecer traduções automáticas e detalhadas para
 ## Funcionalidade Detalhada
 
 O addon funciona automaticamente para traduzir as descrições dos feitiços das seguintes categorias:
+pra desligar a tradução você pode Digitar **/translatorspells**
 
 ### **Classes:**
 
