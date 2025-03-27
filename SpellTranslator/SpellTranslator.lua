@@ -324,35 +324,64 @@ local translations = {
         ["Master Chef"] = "Mestre Culinarista (Passiva)",
 
     -- Spells do Rogue(Ladino)
-      -- Habilidades
-      ["Ambush"] = "Realiza um golpe surpresa em um inimigo, causando dano crítico se realizado de forma furtiva.",
-      ["Backstab"] = "Golpeia o inimigo pelas costas, causando dano elevado.",
-      ["Eviscerate"] = "Golpeia o inimigo, causando dano significativo e aumentando o efeito de sangramento.",
-      ["Kidney Shot"] = "Golpeia os rins do inimigo, atordoando-o e reduzindo sua capacidade de ataque por um tempo.",
-      ["Sap"] = "Imobiliza um inimigo por um tempo, tornando-o incapaz de agir.",
-      ["Stealth"] = "Permite ao Ladino se mover furtivamente, invisível para inimigos próximos.",
-      ["Vanish"] = "Desaparece das vistas dos inimigos, se tornando invisível e permitindo escapar ou se reposicionar.",
-      ["Garrote"] = "Golpeia o inimigo com uma corda, causando dano e aplicando um efeito de sangramento.",
-      ["Rupture"] = "Golpeia o inimigo e o faz sangrar, causando dano ao longo do tempo.",
-      ["Slice and Dice"] = "Aumenta a velocidade de ataque do Ladino, permitindo ataques mais rápidos.",
-      ["Blind"] = "Cega o inimigo, impedindo-o de ver o Ladino e tornando-o incapaz de atacar por um tempo.",
-      ["Distract"] = "Distrai o inimigo, forçando-o a olhar em outra direção por um curto período de tempo.",
-      ["Shadowstep"] = "Teleporta-se rapidamente para o inimigo, permitindo um ataque surpresa.",
-      ["Cloak of Shadows"] = "Cria uma capa de sombras que remove os efeitos de veneno e magia negativa.",
-      ["Adrenaline Rush"] = "Aumenta a velocidade de ataque e gera mais energia para o Ladino.",
-      ["Evasion"] = "Aumenta drasticamente a chance de esquivar-se dos ataques inimigos por um tempo.",
-      ["Feint"] = "Realiza uma manobra para enganar o inimigo e reduzir o dano recebido de ataques frontais.",
-      ["Pick Lock"] = "Permite ao Ladino destrancar cofres ou portas, contanto que tenha a habilidade necessária.",
-      ["Pickpocket"] = "Rouba itens de inimigos desprevenidos, podendo obter ouro ou outros objetos úteis.",
-      ["Shadow Dance"] = "Permite ao Ladino usar suas habilidades furtivas de forma contínua por um tempo limitado.",
-      ["Mutilate"] = "Golpeia o inimigo com lâminas afiadas, causando dano adicional se o inimigo estiver envenenado.",
-      ["Poison"] = "Aplica veneno na lâmina, causando dano ao longo do tempo ao inimigo atingido.",
-      ["Deadly Throw"] = "Lança uma lâmina venenosa à distância, causando dano e aplicando um veneno mortal ao inimigo.",
-      
-      
-
+         -- Habilidades Gerais (Todas as Especializações)
+         ["Sinister Strike"] = "Golpe Covarde - Causa 110% dano de arma + 98. Gera 1 ponto de combo. Custo: 45 energia.",
+         ["Eviscerate"] = "Eviscerar - Causa dano baseado em pontos de combo (5 pts: 1464 a 1560). Custo: 35 energia.",
+         ["Slice and Dice"] = "Fatiar e Picar - Aumenta velocidade de ataque em 40% (baseado em pts de combo). Custo: 25 energia.",
+         ["Expose Armor"] = "Expor Armadura - Reduz armadura do alvo em 50% (5 pts de combo). Custo: 25 energia.",
+         ["Kidney Shot"] = "Golpe nos Rins - Atordoa o alvo (1 pt: 1s, 5 pts: 6s). Custo: 25 energia. CD: 20s.",
+         ["Gouge"] = "Cutucar - Atordoa o alvo por 4s. CD: 10s. Custo: 45 energia.",
+         ["Kick"] = "Pontapé - Interrompe o lançamento e silencia por 5s. CD: 10s. Custo: 25 energia.",
+         ["Sprint"] = "Arrancada - Aumenta velocidade em 70% por 8s. CD: 3 min.",
+         ["Stealth"] = "Furtividade - Permite movimentação furtiva. Velocidade reduzida em 30%.",
+         ["Vanish"] = "Desaparecer - Volta à furtividade instantaneamente. CD: 3 min.",
+         ["Blind"] = "Cegar - Cega o alvo por 10s. CD: 2 min. (Reagente: Pó de Cegar)",
+     
+         -- Assassinação (DPS Veneno)
+         ["Mutilate"] = "Mutilação - Causa 180% dano com arma secundária + 98. Chance extra de crítico com venenos. Custo: 60 energia.",
+         ["Envenom"] = "Envenenar - Consome pts de combo para causar dano de Natureza instantâneo (5 pts: 1148 a 1244). Custo: 35 energia.",
+         ["Cold Blood"] = "Sangue Frio - Próximo ataque é crítico garantido. CD: 3 min.",
+         ["Overkill"] = "Excesso - Aumenta dano em 20% ao sair de furtividade por 20s. (Passiva)",
+         ["Quick Death"] = "Morte Rápida - Reduz CD do Sangue Frio em 45s. (Passiva)",
+         ["Cut to the Chase"] = "Ir Direto ao Ponto - Manter 5 pts de combo em Fatiar e Picar concede 10% de dano. (Passiva)",
+     
+         -- Combate (DPS Armas Duplas)
+         ["Revealing Strike"] = "Golpe Revelador - Causa 110% dano + 98 e aumenta eficácia do próximo Golpe Covarde em 35%. Custo: 40 energia.",
+         ["Killing Spree"] = "Matança - Ataque 7 vezes em 3s a alvos próximos. CD: 2 min.",
+         ["Adrenaline Rush"] = "Descarga de Adrenalina - Aumenta regeneração de energia em 100% por 15s. CD: 3 min.",
+         ["Blade Flurry"] = "Turbilhão de Lâminas - Ataque 1 alvo adicional por 15s. CD: 2 min.",
+         ["Unfair Advantage"] = "Vantagem Injusta - Ataques recebidos têm 10% chance de conceder 10 energia. (Passiva)",
+         ["Combat Potency"] = "Potência de Combate - Ataques com mão secundária têm 20% chance de conceder 15 energia. (Passiva)",
+     
+         -- Subterfúgio (DPS/Controle)
+         ["Backstab"] = "Golpe pelas Costas - Causa 275% dano + 198 (requer estar atrás). Custo: 60 energia.",
+         ["Hemorrhage"] = "Hemorragia - Causa 110% dano + 98 e aplica sangramento (30 stacks máx). Custo: 35 energia.",
+         ["Shadowstep"] = "Passo das Sombras - Teleporta para trás do alvo. CD: 30s.",
+         ["Preparation"] = "Preparação - Reseta CDs de Fuga, Sumir e Cegar. CD: 8 min.",
+         ["Shadow Dance"] = "Dança das Sombras - Permite usar habilidades furtivas por 6s. CD: 1 min.",
+         ["Honor Among Thieves"] = "Honra Entre Ladrões - Críticos de grupo geram pts de combo. (Passiva)",
+         ["Slaughter from the Shadows"] = "Matança nas Sombras - Aumenta dano do Golpe pelas Costas em 10%. (Passiva)",
+     
+         -- Venenos (Aplicáveis em Armas)
+         ["Instant Poison"] = "Veneno Instantâneo - 30% chance de causar 300 a 400 dano de Natureza.",
+         ["Deadly Poison"] = "Veneno Mortal - 30% chance de aplicar acúmulo (5 stacks: 1500 em 12s).",
+         ["Wound Poison"] = "Veneno da Ferida - Reduz cura recebida em 50% por 15s.",
+         ["Mind-numbing Poison"] = "Veneno Entorpecente - Aumenta tempo de lançamento em 30%.",
+     
+         -- Buffs e Utilitários
+         ["Evasion"] = "Evasão - Aumenta esquiva em 50% por 10s. CD: 3 min.",
+         ["Cloak of Shadows"] = "Manto das Sombras - Remove e imune a efeitos mágicos por 5s. CD: 1 min.",
+         ["Tricks of the Trade"] = "Truques do Ofício - Transfere ameaça para o alvo por 6s. CD: 30s.",
+         ["Pick Lock"] = "Arrombar - Permite abrir fechaduras (requer kit de arrombamento).",
+         ["Pick Pocket"] = "Roubar Bolso - Rouba itens de humanoides (não em combate).",
+     
+         -- Passivas Importantes
+         ["Relentless Strikes"] = "Golpes Incansáveis - 20% chance de recuperar 25 energia ao usar habilidades finais. (Passiva)",
+         ["Deadliness"] = "Letalidade - Aumenta poder de ataque em 20%. (Passiva)",
+         ["Precision"] = "Precisão - Aumenta chance de acerto em 5%. (Passiva)",
+         ["Dual Wield Specialization"] = "Especialização em Armas Duplas - Aumenta dano da mão secundária em 50%. (Passiva)",
+         ["Savage Combat"] = "Combate Selvagem - Aumenta dano em 6%. (Passiva)",
    
-    
 
     -- Passivas Raciais
 
@@ -591,6 +620,167 @@ local translations = {
             ["Master of Elements"] = "Mestre dos Elementos - 30% do custo de mana de críticos é restaurado. (Passiva)",
             ["Winter's Chill"] = "Frio do Inverno - Seus ataques de Gelo aumentam chance de crítico em 5% (acumula 5x). (Passiva)",
             ["Improved Scorch"] = "Chamuscar Aprimorado - Aumenta dano de Fogo em 5% (acumula 5x). (Passiva)",
+
+
+
+    -----Mago
+        -- Habilidades Básicas (Todas as Especializações)
+        ["Frostbolt"] = "Gelo de Gelo - Causa 798 a 844 dano de Gelo e reduz velocidade em 40% por 9s. Cast: 3s. Custo: 10% mana.",
+        ["Fireball"] = "Bola de Fogo - Causa 898 a 1144 dano de Fogo ao longo de 8s. Cast: 3.5s. Custo: 14% mana.",
+        ["Arcane Missiles"] = "Mísseis Arcanos - Canaliza 5 mísseis (375 a 421 cada). Custo: 12% mana.",
+        ["Polymorph"] = "Polimorfia - Transforma em ovelha por 50s. CD: 3 min. (Reagente: Cristal Etéreo)",
+        ["Remove Curse"] = "Remover Maldição - Remove 1 maldição de um aliado. Custo: 8% mana.",
+        
+        -- Controle/Utilitários
+        ["Frost Nova"] = "Nova de Gelo - Congela inimigos em 10m por 8s. CD: 25s.",
+        ["Counterspell"] = "Contra-feitiço - Interrompe e silencia por 8s. CD: 24s.",
+        ["Blink"] = "Teleporte - Teleporta 20m à frente. CD: 15s.",
+        ["Invisibility"] = "Invisibilidade - Torna-se invisível após 3s. CD: 3 min.",
+        ["Slow Fall"] = "Queda Lenta - Reduz velocidade de queda. Custo: 6% mana.",
+        ["Spellsteal"] = "Roubar Feitiço - Rouba 1 buff do alvo. Custo: 12% mana. CD: 15s.",
+    
+        -- Especialização Arcana
+        ["Arcane Blast"] = "Explosão Arcana - Causa 1125 a 1171 dano. Custo aumenta 15% por stack (3x máx). Custo base: 9% mana.",
+        ["Arcane Barrage"] = "Barragem Arcana - 843 a 889 dano instantâneo. Alcance: 30m. Custo: 14% mana.",
+        ["Arcane Power"] = "Poder Arcano - +20% dano/custo por 15s. CD: 3 min.",
+        ["Presence of Mind"] = "Presença de Espírito - Próximo feitiço arcano instantâneo. CD: 2 min.",
+        ["Missile Barrage"] = "Barragem de Mísseis - 40% chance de tornar Mísseis Arcanos instantâneos. (Passiva)",
+        ["Arcane Concentration"] = "Concentração Arcana - 10% chance de próximo feitiço não custar mana. (Passiva)",
+    
+        -- Especialização em Fogo
+        ["Pyroblast"] = "Pirojato - Causa 1213 a 1539 dano em 12s. Cast: 5s. Custo: 22% mana.",
+        ["Living Bomb"] = "Bomba Viva - 1200 dano em 12s + explosão de 1500 em área. Custo: 14% mana. CD: 12s.",
+        ["Combustion"] = "Combustão - +10% crit e +50% multiplicador por 10s. CD: 2 min.",
+        ["Dragon's Breath"] = "Sopro do Dragão - Causa 876 a 922 dano e desorienta por 3s. CD: 20s.",
+        ["Hot Streak"] = "Sequência Quente - Críticos podem tornar Pirojato instantâneo. (Passiva)",
+        ["Ignite"] = "Incendiar - 40% do dano crítico é adicionado como DOT. (Passiva)",
+    
+        -- Especialização em Gelo
+        ["Ice Lance"] = "Lança de Gelo - 383 a 429 dano (triplica em alvos congelados). Custo: 7% mana.",
+        ["Summon Water Elemental"] = "Invocar Elemental de Água - Dura 45s. CD: 3 min.",
+        ["Ice Barrier"] = "Barreira de Gelo - Absorve 1950 dano. CD: 30s.",
+        ["Ice Block"] = "Bloco de Gelo - Imunidade por 10s. CD: 5 min.",
+        ["Fingers of Frost"] = "Dedos de Gelo - 15% chance de conceder 15% dano adicional. (Passiva)",
+        ["Brain Freeze"] = "Congelamento Cerebral - 15% chance de tornar Gelo de Gelo instantâneo. (Passiva)",
+    
+        -- Buffs e Passivas Globais
+        ["Arcane Intellect"] = "Intelecto Arcano - +60 intelecto por 30 min.",
+        ["Dalaran Brilliance"] = "Brillho de Dalaran - +60 intelecto e +3% crit ao grupo. (WotLK)",
+        ["Mage Armor"] = "Armadura de Mago - +50% regen mana e +20% resistência. Dura 30 min.",
+        ["Molten Armor"] = "Armadura Derretida - +3% crit e 480 dano ao ser atingido. Dura 30 min.",
+        ["Improved Scorch"] = "Chamuscar Aprimorado - Aumenta dano de Fogo em 5% (5 stacks). (Passiva)",
+        ["Winter's Chill"] = "Frio do Inverno - Aumenta crit de Gelo em 5% (5 stacks). (Passiva)",
+    
+        -- Conjuração
+        ["Conjure Food"] = "Conjurar Comida - Cria 20x Mana Buns (restaura 8400 mana em 30s).",
+        ["Conjure Water"] = "Conjurar Água - Cria 20x Água Arcana (restaura 11400 mana em 30s).",
+        ["Conjure Mana Gem"] = "Conjurar Gema de Mana - Cria gema que restaura 2340 a 2460 mana. CD: 2 min.",
+
+
+    ----Guerreiro
+
+        -- Habilidades Básicas (Todas as Especializações)
+        ["Heroic Strike"] = "Golpe Heroico - Ataque adicional que causa 273 a 327 dano. Custo: 15 fúria.",
+        ["Charge"] = "Investida - Carrega para o alvo, gerando 15 fúria. CD: 15s.",
+        ["Thunder Clap"] = "Estrondo Trovejante - Causa 333 a 357 dano e reduz velocidade de ataque em 20%. Custo: 20 fúria.",
+        ["Hamstring"] = "Tendão - Reduz velocidade de movimento em 50% por 15s. Custo: 10 fúria.",
+        ["Battle Shout"] = "Grito de Guerra - Aumenta poder de ataque do grupo em 550 por 2 min.",
+        ["Execute"] = "Executar - Causa 1500 a 1700 dano (só abaixo de 20% vida). Custo: 15 fúria.",
+    
+        -- Especialização em Armas
+        ["Mortal Strike"] = "Golpe Mortal - Causa 200% dano de arma + 210 e reduz cura recebida em 50%. CD: 6s. Custo: 30 fúria.",
+        ["Overpower"] = "Sobrepujar - Ataque garantido que causa 150% dano. Só após o alvo esquivar. CD: 5s.",
+        ["Bladestorm"] = "Tempestade de Lâminas - Ataques giratórios por 6s (7 ataques). CD: 1.5 min.",
+        ["Sweeping Strikes"] = "Golpes Varredores - Ataques atingem 1 alvo adicional por 10s. CD: 30s.",
+        ["Taste for Blood"] = "Sede de Sangue - Sobrepujar tem 45% chance de não acionar CD. (Passiva)",
+        ["Weapon Mastery"] = "Maestria em Armas - +10% dano com armas especiais. (Passiva)",
+    
+        -- Especialização em Fúria
+        ["Bloodthirst"] = "Sede de Sangue - Causa 150% dano de arma e cura 5% da vida. CD: 5s. Custo: 30 fúria.",
+        ["Whirlwind"] = "Redemoinho - Ataque em área (4 alvos) com 150% dano de arma. Custo: 25 fúria.",
+        ["Rampage"] = "Fúria Selvagem - Aumenta poder de ataque em 250 por 30s. CD: 1 min.",
+        ["Death Wish"] = "Desejo de Morte - Aumenta dano causado em 20% e reduz defesas por 30s. CD: 3 min.",
+        ["Flurry"] = "Fúria - Aumenta velocidade de ataque em 25% após crítico. (Passiva)",
+        ["Titan's Grip"] = "Punho de Titã - Permite empunhar armas 2M em ambas as mãos. (Passiva)",
+    
+        -- Especialização em Proteção
+        ["Shield Slam"] = "Golpe de Escudo - Causa 1200 a 1400 dano baseado em armadura. Custo: 20 fúria.",
+        ["Revenge"] = "Revanche - Causa 1550 a 1650 dano após bloquear/esquivar/parry. Custo: 5 fúria.",
+        ["Shield Block"] = "Bloquear com Escudo - Aumenta chance de bloqueio para 100% por 10s. CD: 1 min.",
+        ["Last Stand"] = "Último Recurso - Aumenta vida máxima em 30% por 20s. CD: 3 min.",
+        ["Concussion Blow"] = "Golpe Atordoante - Causa 500 dano e atordoa por 5s. CD: 45s.",
+        ["Shield Mastery"] = "Maestria com Escudo - +30% bloqueio. (Passiva)",
+    
+        -- Defensivos/Utilitários
+        ["Defensive Stance"] = "Postura Defensiva - +15% armadura, -10% dano causado.",
+        ["Berserker Stance"] = "Postura Berserker - +10% dano causado, +10% dano recebido.",
+        ["Intercept"] = "Interceptar - Investida que atordoa por 3s. CD: 30s. (Requer Berserker Stance)",
+        ["Spell Reflection"] = "Reflexão de Feitiço - Reflete o próximo feitiço por 5s. CD: 25s.",
+        ["Retaliation"] = "Retaliação - Contra-ataca todos os ataques por 12s. CD: 30 min.",
+        ["Commanding Shout"] = "Grito de Comando - Aumenta vida do grupo em 1650 por 2 min.",
+    
+        -- Passivas Globais
+        ["Anger Management"] = "Controle de Fúria - Gera 1 fúria a cada 3s em combate. (Passiva)",
+        ["Deep Wounds"] = "Feridas Profundas - Críticos causam sangramento (60% do dano em 12s). (Passiva)",
+        ["Two-Handed Weapon Specialization"] = "Especialização em Armas 2M - +10% dano. (Passiva)",
+        ["Blood Craze"] = "Fúria Sanguinária - Cura 3% da vida ao sofrer críticos. (Passiva)",
+    --- Necromante
+
+        -- Habilidades Básicas (Todas as Especializações)
+        ["Shadow Bolt"] = "Projétil das Sombras - Causa 723 a 769 dano de Sombra. Cast: 2.5s. Custo: 13% mana.",
+        ["Corruption"] = "Corrupção - Causa 1080 dano de Sombra em 18s. Custo: 9% mana.",
+        ["Drain Life"] = "Drenar Vida - Canaliza 750 dano de Sombra e cura 100% do dano. Custo: 13% mana.",
+        ["Fear"] = "Medo - Faz o alvo fugir por 8s. CD: 30s. Custo: 10% mana.",
+        ["Health Funnel"] = "Funil de Vida - Transfere 750 vida por segundo para seu demônio. Custo: 3% mana.",
+        ["Soulstone"] = "Pedra das Almas - Revive o alvo ao morrer. Dura 30 min. (Reagente: Pedra de Alma)",
+    
+        -- Especialização em Aflicção
+        ["Unstable Affliction"] = "Aflição Instável - Causa 1560 dano de Sombra em 15s. Se dissipado, silencia por 5s. Custo: 15% mana.",
+        ["Haunt"] = "Assombrar - Causa 670 a 716 dano e aumenta dano de suas DOTs em 20%. CD: 8s. Custo: 12% mana.",
+        ["Drain Soul"] = "Drenar Alma - Causa 550 dano por 15s. Gera 1 Fragmento de Alma se alvo morrer. Custo: 11% mana.",
+        ["Curse of Agony"] = "Maldição da Agonia - Causa 1560 dano de Sombra em 24s (aumenta com o tempo). Custo: 9% mana.",
+        ["Pandemic"] = "Pandemia - Seus DOTs críticos podem se espalhar para outros alvos. (Passiva)",
+        ["Everlasting Affliction"] = "Aflição Eterna - Atualiza duração da Corrupção ao lançar Projétil das Sombras. (Passiva)",
+    
+        -- Especialização em Demonologia
+        ["Metamorphosis"] = "Metamorfose - Transforma-se em Demônio por 30s. CD: 3 min.",
+        ["Immolation Aura"] = "Aura de Imolação - Causa 375 dano de Fogo por segundo em 10m. Só em Metamorfose.",
+        ["Demonic Empowerment"] = "Empoderamento Demoníaco - Aumenta dano e vida de seu demônio em 20% por 30s. CD: 1 min.",
+        ["Soul Link"] = "Elo das Almas - 20% do dano recebido é transferido para seu demônio. (Passiva)",
+        ["Demonic Knowledge"] = "Conhecimento Demoníaco - 15% do seu intelecto aumenta dano do demônio. (Passiva)",
+        ["Fel Synergy"] = "Sinergia Vil - Seu demônio cura 15% do dano que causa. (Passiva)",
+    
+        -- Especialização em Destruição
+        ["Incinerate"] = "Incinerar - Causa 651 a 697 dano de Fogo. Cast: 2s. Custo: 12% mana.",
+        ["Conflagrate"] = "Conflagrar - Explode Imolar causando 750 a 850 dano de Fogo. Custo: 1 Fragmento de Alma.",
+        ["Chaos Bolt"] = "Projétil do Caos - Ignora resistências, causando 1125 a 1171 dano de Fogo. CD: 12s. Custo: 15% mana.",
+        ["Immolate"] = "Imolar - Causa 785 dano de Fogo em 15s + 375 dano inicial. Custo: 17% mana.",
+        ["Backdraft"] = "Contracorrente - Conflagrar reduz tempo de cast de Incinerar/Projétil do Caos em 30%. (Passiva)",
+        ["Emberstorm"] = "Tempestade de Brasas - Aumenta dano de Fogo em 15%. (Passiva)",
+    
+        -- Invocações de Demônios
+        ["Summon Imp"] = "Invocar Diabrete - Invoca um Diabrete (Dano à distância).",
+        ["Summon Voidwalker"] = "Invocar Abissal - Invoca um Abissal (Tanque).",
+        ["Summon Succubus"] = "Invocar Súcubo - Invoca uma Súcubo (Controle).",
+        ["Summon Felhunter"] = "Invocar Cão Vil - Invoca um Cão Vil (Antimagia).",
+        ["Summon Felguard"] = "Invocar Guarda Vil - Invoca um Guarda Vil (Apenas Demonologia).",
+    
+        -- Maldições
+        ["Curse of the Elements"] = "Maldição dos Elementos - Reduz resistências em 13%. Dura 5 min.",
+        ["Curse of Weakness"] = "Maldição da Fraqueza - Reduz poder de ataque em 35%. Dura 2 min.",
+        ["Curse of Tongues"] = "Maldição das Línguas - Aumenta tempo de cast em 50%. Dura 30s.",
+    
+        -- Utilitários/Defensivos
+        ["Death Coil"] = "Espiral da Morte - Causa 750 dano de Sombra e atordoa por 3s. CD: 2 min. Custo: 15% mana.",
+        ["Howl of Terror"] = "Uivo de Terror - Medo em área (5 alvos) por 8s. CD: 40s. Custo: 15% mana.",
+        ["Soulshatter"] = "Estrondo das Almas - Reduz ameaça em 90%. CD: 5 min. Custo: 1 Fragmento de Alma.",
+        ["Ritual of Summoning"] = "Ritual de Evocação - Invoca membros do grupo. (Reagente: Pedra de Reunião)",
+    
+        -- Passivas Globais
+        ["Demonic Aegis"] = "Égide Demoníaca - +15% armadura e +30% efeitos de Pedra de Alma/Sanguinar. (Passiva)",
+        ["Shadow Embrace"] = "Abraço das Sombras - Seus ataques de Sombra reduzem dano causado pelo alvo em 5%. (Passiva)",
+        ["Molten Core"] = "Núcleo Derretido - Seus DOTs têm chance de reduzir tempo de cast de Incinerar/Projétil das Sombras. (Passiva)",
+
 
 }
 
